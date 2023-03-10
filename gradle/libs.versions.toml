@@ -1,0 +1,43 @@
+[versions]
+targetSdk = "31"
+compileSdk = "33"
+minSdk = "21"
+
+agp = "7.3.0"
+dagger = "2.45"
+kotlin = "1.7.20"
+
+glide = "4.6.1"
+gson = "2.8.7"
+kotlinCoroutines = "1.6.4"
+retrofit = "2.9.0"
+room = "2.4.3"
+
+[libraries]
+kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+androidGradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinCoroutines" }
+
+dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+
+androidx-activityKtx = "androidx.activity:activity-ktx:1.6.1" # https://androidx.tech/artifacts/activity/activity-ktx/
+androidx-fragmentKtx = "androidx.fragment:fragment-ktx:1.5.5" # https://androidx.tech/artifacts/fragment/fragment-ktx/
+androidx-lifecycle-livedataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1" # https://androidx.tech/artifacts/lifecycle/lifecycle-livedata-ktx/
+
+coil = "io.coil-kt:coil-compose:2.2.2"
+timber = "com.jakewharton.timber:timber:5.0.1"
+material = "com.google.android.material:material:1.7.0"
+
+okhttp-loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:4.9.1"
+
+viewbindingpropertydelegate = "com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.0-beta01"
